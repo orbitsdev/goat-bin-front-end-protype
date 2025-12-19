@@ -1,4 +1,6 @@
+// types/user.ts
 export interface User {
-    name: string
-    age: number
+  id: number
+  name: string
+  email: string
 }

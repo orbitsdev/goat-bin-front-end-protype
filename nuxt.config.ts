@@ -13,9 +13,16 @@ export default defineNuxtConfig({
   },
 
   modules: ['nuxt-auth-sanctum', "shadcn-nuxt"],
+  // nitro: {
+  //   devProxy: {
+  //     '/api': {
+  //       target: 'http://localhost:8000',
+  //       changeOrigin: true,
+  //     },
+  //   },
+  // },
   sanctum: {
     baseUrl: "http://localhost:8000",
-
     endpoints: {
       csrf: "/sanctum/csrf-cookie",
       login: "/login",
