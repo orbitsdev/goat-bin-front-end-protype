@@ -1,4 +1,7 @@
 <script setup lang="ts">
+  definePageMeta({
+    middleware: ['redirect'],
+  })
     const user = useUser();
 </script>
 <template>
@@ -13,6 +16,6 @@
     <p v-else>
       No user logged in
     </p>
-        <NuxtWelcome />
+      
     </div>
 </template>
