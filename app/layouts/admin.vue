@@ -1,8 +1,5 @@
 <script setup lang="ts">
-  definePageMeta({
-  description: "A dashboard with sidebar, data table, and analytics cards.",
-})
-
+ 
 const iframeHeight = "800px"
 import AppSidebar from "@/components/AppSidebar.vue"
 import ChartAreaInteractive from "@/components/ChartAreaInteractive.vue"
@@ -298,7 +295,9 @@ const data = [
     <AppSidebar variant="inset" />
     <SidebarInset>
       <SiteHeader />
-      <slot/>
+      <div class="mx-auto container">
+        <slot/>
+      </div>
       <!-- <div class="flex flex-1 flex-col">
         <div class="@container/main flex flex-1 flex-col gap-2">
           <div class="flex flex-col gap-4 py-4 md:gap-6 md:py-6">

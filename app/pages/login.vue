@@ -1,10 +1,9 @@
 
-<script setup lang="ts">
-import LoginForm from "@/components/login-01/components/LoginForm.vue"
-definePageMeta({
-  middleware: 'sanctum:guest'
-})
-
+<script lang="ts" setup>
+  definePageMeta({
+    middleware: ['sanctum:guest'],
+  });
+  import LoginForm from "@/components/login-01/components/LoginForm.vue"
 </script>
 
 <template>
